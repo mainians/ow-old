@@ -29,7 +29,7 @@
   package = "netlify-plugin-algolia-index"
     [plugins.inputs]
       exclude = ['/admin', '/404.html']
-      indexName = search
+      indexName = "search"
 
 [[redirects]]
   from = "https://scaleya.netlify.app"
