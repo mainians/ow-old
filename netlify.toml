@@ -24,3 +24,14 @@
   for = "index.xml"
   [headers.values]
     Content-Type = "application/rss+xml"
+
+[[plugins]]
+  package = netlify-plugin-algolia-index
+    [plugins.inputs]
+      exclude = ['/admin', '/404.html']
+
+[[redirects]]
+  from = "https://scaleya.netlify.app"
+  to = "https://scaleya.com"
+  status = 301
+  force = true
