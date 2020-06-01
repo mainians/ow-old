@@ -1,6 +1,12 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Scaleya/ow
   branch: master
+
+publish_mode: editorial_workflow
+site_url: "https://scaleya.com"
+logo_url: "https://cdn.jsdelivr.net/gh/Scaleya/jsdelivr/web/avatar.png"
+locale: 'zh'
 media_folder: 'static/img/'
 public_folder: 'img'
 collections:
