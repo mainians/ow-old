@@ -29,7 +29,7 @@ how to install NaiveProxy on Ubuntu 20.04
 * Ubuntu 20.04
 * ProxySU
 * NaiveGUI
-* [工具打包下载](https://huhu.blue/tools/)
+* [工具打包下载](/dwnld/naive/)
 
 
 ## 服务器端:)

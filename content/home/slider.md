@@ -2,7 +2,7 @@
 # Slider widget.
 widget = "slider"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
+active = true  # Activate this widget? true/false
 weight = 1  # Order that this section will appear.
 
 # Slide interval.
@@ -16,14 +16,14 @@ height = ""
 # Slides.
 # Duplicate an `[[item]]` block to add more slides.
 [[item]]
-  title = "Hello"
-  content = "I am center aligned :smile:"
+  title = "Hello Friends"
+  content = "I am 1st Hugo website :icecream:"
   align = "center"  # Choose `center`, `left`, or `right`.
 
   # Overlay a color or image (optional).
   #   Deactivate an option by commenting out the line, prefixing it with `#`.
-  overlay_color = "#666"  # An HTML color value.
-  overlay_img = "headers/bubbles-wide.jpg"  # Image path relative to your `static/img/` folder.
+  overlay_color = "#777"  # An HTML color value.
+  overlay_img = "tommy-boudreau-diO0a_ZEiEE-unsplash.jpg"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
 
   # Call to action button (optional).
@@ -35,20 +35,31 @@ height = ""
   cta_icon = "graduation-cap"
 
 [[item]]
-  title = "Left"
-  content = "I am left aligned :smile:"
+  title = "Icons"
+  content = "Hit link blew :lollipop:"
   align = "left"
 
   overlay_color = "#555"  # An HTML color value.
-  overlay_img = ""  # Image path relative to your `static/img/` folder.
+  overlay_img = "taylor-smith-selWWrPDkoc-unsplash.jpg"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
+
+  cta_label = "Access Icons"
+  cta_url = "https://fontawesome.com/icons?d=gallery&s=brands"
+  cta_icon_pack = "fas"
+  cta_icon = "icons"
 
 [[item]]
-  title = "Right"
-  content = "I am right aligned :smile:"
+  title = "Emoji"
+  content = "Click below link :broccoli:"
   align = "right"
 
-  overlay_color = "#333"  # An HTML color value.
-  overlay_img = ""  # Image path relative to your `static/img/` folder.
+  overlay_color = "#888"  # An HTML color value.
+  overlay_img = "tevarak-phanduang-eOvv4N6yNmk-unsplash.jpg"  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
+
+  cta_label = "Access emoji"
+  cta_url = "https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md"
+  cta_icon_pack = "fa"
+  cta_icon = "kiss-wink-heart"
 +++
+
