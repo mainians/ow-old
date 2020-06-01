@@ -14,10 +14,34 @@ image:
   focal_point: Smart
   preview_only: false
   alt_text: naiveproxy
+  caption: naiveproxy
 ---
 怎样在Ubuntu 20.04上安装NaiveProxy？
 
 how to install NaiveProxy on Ubuntu 20.04
+
+{{% toc %}}
+
+前提
+
+* windows 10 Pro
+* 域名
+* ProxySU
+* NaiveGUI
+
+
+
+
+
+
+
+
+
+
+
+
+<details>
+  <summary>以下是手动搭建的过程，我自己看即可。</summary>
 
 ## 前提
 
@@ -160,3 +184,5 @@ systemctl stop naive
 systemctl start naive
 systemctl status naive
 ```
+
+</details>
