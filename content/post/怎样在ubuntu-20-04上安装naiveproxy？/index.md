@@ -6,35 +6,42 @@ summary: |-
   怎样在Ubuntu 20.04上安装NaiveProxy？
   how to install NaiveProxy on Ubuntu 20.04
 draft: false
-featured: false
+featured: true
+tags:
+  - naiveproxy
 image:
-  filename: featured
+  filename: frog-310357_1280.png
   focal_point: Smart
   preview_only: false
+  alt_text: naiveproxy
 ---
 怎样在Ubuntu 20.04上安装NaiveProxy？
 
 how to install NaiveProxy on Ubuntu 20.04
 
 ## 前提
+
 * Ubuntu 20.04
 * mobaxterm
 * 域名
 
 ## 服务器端
+
 安装libnss3
+
 ```bash
 apt install libnss3
 ```
 
 安装`caddy 1.0`带`http.forwardproxy`版本
+
 ```bash
 curl https://getcaddy.com | bash -s personal http.forwardproxy
 ```
 
 `caddy`开机自启
-```bash
 
+```bash
 cat <<EOF > /etc/systemd/system/caddy.service
 [Unit]
 Description=Caddy
@@ -51,10 +58,10 @@ ExecReload=/usr/local/bin/caddy reload --conf /etc/caddy/Caddyfile
 [Install]
 WantedBy=multi-user.target
 EOF
-
 ```
 
 caddy配置
+
 ```bash
 mkdir -p /etc/caddy 
 
@@ -70,11 +77,9 @@ forwardproxy {
   upstream http://127.0.0.1:8080
 }
 EOF
-
 ```
 
-
-```bash
+```cwl
 systemctl daemon-reload
 systemctl enable caddy
 systemctl stop caddy
@@ -82,8 +87,8 @@ systemctl start caddy
 systemctl status caddy
 ```
 
-
 自己编译NaiveProxy
+
 ```
 apt install git python2 ninja-build pkg-config  libnss3-dev  curl unzip ccache
 cd /srv 
@@ -104,8 +109,8 @@ ninja: build stopped: subcommand failed.
 算了 没搞出来
 ```
 
-
 下载二进制包
+
 ```bash
 mkdir -p /etc/NaiveProxy
 
@@ -116,9 +121,7 @@ tar -xf naiveproxy*.tar.xz && rm naiveproxy*.tar.xz
 cp naiveproxy*/* .
 ```
 
-
 ```bash
-
 cat <<EOF > /etc/systemd/system/naive.service
 [Unit]
 Description=NaiveProxy
@@ -139,10 +142,9 @@ AmbientCapabilities=CAP_NET_BIND_SERVICE
 [Install]
 WantedBy=multi-user.target
 EOF
-
 ```
 
-```bash 
+```bash
 cat <<EOF > /etc/NaiveProxy/config.json
 {
   "listen": "http://127.0.0.1:8080",
