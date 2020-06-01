@@ -10,7 +10,7 @@ featured: true
 tags:
   - naiveproxy
 image:
-  filename: frog-310357_1280.png
+  filename: featured.png
   focal_point: Smart
   preview_only: false
   alt_text: naiveproxy
