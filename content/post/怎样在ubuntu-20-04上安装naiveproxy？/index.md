@@ -22,12 +22,51 @@ how to install NaiveProxy on Ubuntu 20.04
 
 {{% toc %}}
 
-前提
+## 前提:)
 
-* windows 10 Pro
+* 仅`windows` 10 Pro教程
 * 域名
+* Ubuntu 20.04
 * ProxySU
 * NaiveGUI
+* [工具打包下载](https://huhu.blue/tools/)
+
+
+## 服务器端:)
+
+1. 一台`Ubuntu` 20.04 服务器,已经知道root密码:)
+
+![连接服务器](root.png)
+
+2. proxysu一秒安装
+
+![一键安装](proxysu.png)
+
+3. 服务器端安装成功
+![一键安装](success.png)
+
+
+## windows客户端:)
+
+1. 剪贴板导入链接
+
+![](import.png)
+
+2. start
+
+![](start.png)
+
+3. too young too simple sometimes naive!?
+
+![](naive.png)
+
+
+不过还是推荐使用`mellow`
+```bash
+choco install -y mellow
+```
+
+推荐个几把，mellow调试失败
 
 
 
@@ -37,11 +76,7 @@ how to install NaiveProxy on Ubuntu 20.04
 
 
 
-
-
-
-<details>
-  <summary>以下是手动搭建的过程，我自己看即可。</summary>
+{{< spoiler text="以下是手动搭建的过程，我自己看即可。" >}}
 
 ## 前提
 
@@ -185,4 +220,4 @@ systemctl start naive
 systemctl status naive
 ```
 
-</details>
+ {{< /spoiler >}}
