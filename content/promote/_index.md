@@ -1,5 +1,5 @@
 ---
-title: Publications
+title: Promotion
 
 # View.
 #   1 = List

@@ -68,5 +68,5 @@ text_color_light = true
 +++
 
 {{% alert note %}}
-Quickly discover relevant content by [filtering publications]({{< ref "/promote/_index.md" >}}).
+Quickly discover relevant content by [filtering promotions]({{< ref "/promote/_index.md" >}}).
 {{% /alert %}}
