@@ -22,8 +22,8 @@ height = ""
 
   # Overlay a color or image (optional).
   #   Deactivate an option by commenting out the line, prefixing it with `#`.
-  overlay_color = "#777"  # An HTML color value.
-  overlay_img = "tommy-boudreau-diO0a_ZEiEE-unsplash.jpg"  # Image path relative to your `static/img/` folder.
+  overlay_color = "GRAY"  # An HTML color value.
+  overlay_img = ""  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
 
   # Call to action button (optional).
@@ -39,8 +39,8 @@ height = ""
   content = "Hit link blew :lollipop:"
   align = "left"
 
-  overlay_color = "#555"  # An HTML color value.
-  overlay_img = "taylor-smith-selWWrPDkoc-unsplash.jpg"  # Image path relative to your `static/img/` folder.
+  overlay_color = "GRAY"  # An HTML color value.
+  overlay_img = ""  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
 
   cta_label = "Access Icons"
@@ -53,8 +53,8 @@ height = ""
   content = "Click below link :broccoli:"
   align = "right"
 
-  overlay_color = "#888"  # An HTML color value.
-  overlay_img = "tevarak-phanduang-eOvv4N6yNmk-unsplash.jpg"  # Image path relative to your `static/img/` folder.
+  overlay_color = "GRAY"  # An HTML color value.
+  overlay_img = ""  # Image path relative to your `static/img/` folder.
   overlay_filter = 0.5  # Darken the image. Value in range 0-1.
 
   cta_label = "Access emoji"

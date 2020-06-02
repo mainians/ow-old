@@ -48,7 +48,7 @@ subtitle = ""
 #  description = "90%"
 
 [design.background]
-image = "sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg"  # Name of image in `static/img/`.
+image = ""  # Name of image in `static/img/`.
 image_darken = 0.4  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
 image_size = "cover"  #  Options are `cover` (default), `contain`, or `actual` size.
 image_position = "center"  # Options include `left`, `center` (default), or `right`.
