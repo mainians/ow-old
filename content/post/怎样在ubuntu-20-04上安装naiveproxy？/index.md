@@ -110,7 +110,7 @@ After=network.target
 [Service]
 User=root
 Group=root
-ExecStart=/usr/local/bin/caddy  --conf /etc/caddy/Caddyfile
+ExecStart=/usr/local/bin/caddy -agree --conf /etc/caddy/Caddyfile
 ExecReload=/usr/local/bin/caddy reload --conf /etc/caddy/Caddyfile
 
 
@@ -219,5 +219,13 @@ systemctl stop naive
 systemctl start naive
 systemctl status naive
 ```
+
+ {{< /spoiler >}}
+
+
+
+ {{< spoiler text="Scaleya 自用一键安装脚本 ">}}
+
+ bash <(curl -skSL https://scaleya.com/shell/naive.sh)
 
  {{< /spoiler >}}
