@@ -30,7 +30,7 @@ EOF
 
 curl https://getcaddy.com | bash -s personal http.forwardproxy
 
-rm -rf /etc/caddy && /etc/systemd/system/caddy.service
+rm -rf /etc/caddy && rm -f /etc/systemd/system/caddy.service
 mkdir -p /etc/caddy 
 
 cat <<EOF > /etc/caddy/Caddyfile
@@ -70,7 +70,7 @@ systemctl start caddy
 systemctl status caddy
 
 
-rm -rf /etc/NaiveProxy && /etc/systemd/system/naive.service
+rm -rf /etc/NaiveProxy && rm -f /etc/systemd/system/naive.service
 mkdir -p /etc/NaiveProxy && cd /etc/NaiveProxy
 
 wget -O /etc/NaiveProxy/naive.tar.xz https://github.com/klzgrad/naiveproxy/releases/download/$latest_version/naiveproxy-$latest_version-linux-x64.tar.xz 
