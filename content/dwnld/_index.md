@@ -22,4 +22,9 @@ menu:
     weight: 1
 ---
 
-各种软件快速下载，链接汇总.
+Scaleya常用的各种软件快速下载，链接汇总.
+- WINDOWS 10 64BIT
+- MACOS
+- IPAD PRO
+- ~~ANDROID~~
+- LEDE
