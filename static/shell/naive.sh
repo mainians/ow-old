@@ -67,7 +67,7 @@ systemctl daemon-reload
 systemctl enable caddy
 systemctl stop caddy
 systemctl start caddy
-systemctl status caddy
+# systemctl status caddy
 
 
 rm -rf /etc/NaiveProxy && rm -f /etc/systemd/system/naive.service
@@ -111,4 +111,4 @@ systemctl daemon-reload
 systemctl enable naive
 systemctl stop naive
 systemctl start naive
-systemctl status naive
+# systemctl status naive
