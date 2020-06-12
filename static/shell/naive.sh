@@ -5,7 +5,7 @@
 #! /bin/bash
 
 
-sudo apt update 
+apt update 
 apt -y install libnss3
 
 
@@ -31,7 +31,7 @@ EOF
 curl https://getcaddy.com | bash -s personal http.forwardproxy
 
 rm -rf /etc/caddy && rm -f /etc/systemd/system/caddy.service
-mkdir -p /etc/caddy 
+mkdir -p /etc/caddy
 
 cat <<EOF > /etc/caddy/Caddyfile
 wp.scaleya.xyz
@@ -73,11 +73,11 @@ systemctl start caddy
 rm -rf /etc/NaiveProxy && rm -f /etc/systemd/system/naive.service
 mkdir -p /etc/NaiveProxy && cd /etc/NaiveProxy
 
-wget -O /etc/NaiveProxy/naive.tar.xz https://github.com/klzgrad/naiveproxy/releases/download/$latest_version/naiveproxy-$latest_version-linux-x64.tar.xz 
+wget -O /etc/NaiveProxy/naive.tar.xz https://github.com/klzgrad/naiveproxy/releases/download/$latest_version/naiveproxy-$latest_version-linux-x64.tar.xz
 
 tar -xf naive.tar.xz && rm naive.tar.xz && cp naiveproxy*/* . && rm -r naiveproxy-*
 
-cd 
+cd
 
 cat <<EOF > /etc/systemd/system/naive.service
 [Unit]
