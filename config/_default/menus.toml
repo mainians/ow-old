@@ -30,13 +30,18 @@
 
 [[main]]
   name = "Dwnld"
-  url = "#dwnld"
+  url = "/dwnld"
   weight = 60
+
+[[main]]
+  name = "Tut"
+  url = "/tut"
+  weight = 70
 
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 70
+  weight = 80
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
